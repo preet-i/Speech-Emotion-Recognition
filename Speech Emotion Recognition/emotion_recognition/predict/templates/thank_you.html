@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Speech Emotion Recognition</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top" style="background-color: #694f8e">
+      <div class="w3-row w3-padding w3-black" style="background-color: #694f8e">
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">UPLOAD</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">FEEDBACK</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin-top: -10%;
+      "
+    >
+      <div
+        style="
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+          text-align: center;
+          margin-top: 10%;
+        "
+      >
+        <h5>Thank you for your feedback</h5>
+        <a href="{% url 'upload' %}">Go back to Home</a>
+      </div>
+    </div>
+       <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>
+      Made by <br>
+      <p>Neha, Preeti, Priyamvadha and Rakshith</p>
+      </p>
+    </footer>
+  </body>
+</html>
